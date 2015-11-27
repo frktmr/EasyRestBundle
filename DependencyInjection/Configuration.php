@@ -23,6 +23,7 @@ class Configuration implements ConfigurationInterface
             ->children()
                 ->booleanNode('enable_listeners')->defaultTrue()->end()
                 ->booleanNode('enable_exception_controller')->defaultTrue()->end()
+                ->booleanNode('enable_content_type_json')->defaultTrue()->end()
             ->end();
 
         return $treeBuilder;

@@ -32,5 +32,7 @@ class OsmEasyRestExtension extends Extension
         if ($config['enable_exception_controller']) {
             $container->setParameter('twig.exception_listener.controller', "osm_easy_rest.controller.exception_controller:showAction");
         }
+
+        $container->setParameter('osm_easy_rest.enable_content_type_json', $config['enable_content_type_json']);
     }
 }

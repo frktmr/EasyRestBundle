@@ -56,4 +56,4 @@ change this behaviour with following parameters:
     osm_easy_rest:
         enable_listeners: false
         enable_exception_controller: true
-
+        enable_content_type_json: true
